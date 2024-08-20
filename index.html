@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu_small">
+        <div class="dock_container">
+            <button class="dock_button" onclick="show_hide_profile_menu()">&#9776;</button>
+        </div>
+        <div class="choose_menu">
+            <button onclick="show_section('home')" class="menu_options"><img src="/home.png"
+                    alt=""></button>
+            <button onclick="show_section('about_me')" class="menu_options"><img src="/about.png"
+                    alt=""></button>
+            <button onclick="show_section('projects')" class="menu_options"><img src="/projects.png"
+                    alt=""></button>
+            <button onclick="show_section('resume')" class="menu_options"><img src="/resume.png"
+                    alt=""></button>
+            <button onclick="show_section('contact_me')" class="menu_options"><img src="/contact.jpeg"
+                    alt=""></button>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <div class="profile">
+            <img src="https://scontent-bom2-2.xx.fbcdn.net/v/t39.30808-1/380883165_1042018783823634_7730607949175894875_n.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=Ej_2XOeJD8EQ7kNvgGO7iSu&_nc_ht=scontent-bom2-2.xx&oh=00_AYCPfEOQluM0nHFBY8QPap861z2XoWkEQVK2S7Ii3cFtbw&oe=66C79A7F" alt="">
+            <h3>Vikash Chaudhary</h3>
+        </div>
+        <div class="choose_menu">
+            <button onclick="show_section('home')" class="menu_options">&#60;<span>Home</span>&#62;</button>
+            <button onclick="show_section('about_me')" class="menu_options">&#60;<span>About Me</span>&#62;</button>
+            <button onclick="show_section('projects')" class="menu_options">&#60;<span>Projects</span>&#62;</button>
+            <button onclick="show_section('resume')" class="menu_options">&#60;<span>Resume</span>&#62;</button>
+            <button onclick="show_section('contact_me')" class="menu_options">&#60;<span>Contact Me</span>&#62;</button>
+        </div>
+    </div>
+
+
+
+    <div class="show_section">
+        <div id="home" class="sections_for_menu">
+            <div id="left_with_text">
+                <h1 id="h1_1">Hi,</h1>
+                <h1 id="h1_2">I'm Vikash,</h1>
+                <h1 id="h1_3">Web Developer</h1>
+                <h3>Front-End: Html / Css / Js / React</h3>
+                <h3>Back-End: Django</h3>
+            </div>
+            <div id="right_with_img">
+                <img src="profile_image.jpeg" alt="">
+            </div>
+        </div>
+
+        <div id="about_me" class="sections_for_menu">
+            <h1>&#60; <span>About Me</span> &#62;</h1>
+            <div id="left_with_img">
+                <div id="about_img_container">
+                    <img id="about_me_big_img" src="about_me.png" alt="">
+                </div>
+            </div>
+            <div id="right_with_text">
+                <P>I am a web developer specializing in front-end technologies like HTML, CSS, JavaScript, and React, with strong back-end skills in Django. I create dynamic, responsive, and high-performance web applications. <br><br>
+                    I also have a solid foundation in data structures with C programming and am proficient in Python, enabling me to deliver optimized, scalable solutions.</P>
+            </div>
+        </div>
+
+        <div id="projects" class="sections_for_menu">
+            <h1>&#60; <span>Projects</span> &#62;</h1>
+        </div>
+
+        <div id="resume" class="sections_for_menu"></div>
+
+        <div id="contact_me" class="sections_for_menu">
+            <h1>&#60; <span>Conatct Information</span> &#62;</h1>
+            <div id="contact_me_container">
+                <div id="contact_me_info">
+                    <div>Phone No. <span>9772883374</span></div>
+                    <div>Address <span>AE311 MS Hall, IIT_KHARAGPUR, KHARAGPUR, WEST_BENGAL  </span></div>
+                    <div>Email <span>vbochliya@gmail.com</span></div>
+                </div>
+                <div id="contact_me_links">
+                    <a href="https://github.com/vbochliya" target="_blank"><img src="/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/vikash-chaudhary-zero/" target="_blank"><img src="/linkedin.jpg" alt=""></a>
+                    <a href="https://www.instagram.com/vikash_zero/" target="_blank"><img src="/instagrame.webp" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100040465669000" target="_blank"><img src="/facebook.png" alt=""></a>
+                    
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #353535;
+}
+
+
+
+
+
+
+
+
+
+/* dock is here that is small menu here other style are same as menu because i given classes same */
+.dock_container{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #353535;
+}
+.menu_small{
+    color: white;
+    width: 4rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #353535;
+}
+.menu_options img{
+    width: 60%;
+    height: 60%;
+    filter: invert(86%);
+}
+.dock_button{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 12.8rem;
+    color: white;
+    border: none;
+    background-color: #1a1a1a;
+}
+/*menu section where profile photo is and all selection menus are */
+.menu{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+    z-index: 101;
+    top: 0;
+    left: 4rem;
+    color: white;
+    width: 15rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #343535bd;
+    border-right: 2px solid black;
+}
+.menu.show {
+    display: flex;
+    opacity: 1;
+}
+.profile{
+    width: 100%;
+    height: 18rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.profile img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.profile h3{
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+.choose_menu{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu_options{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #fffdf8;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_options:hover{
+    background-color: rgb(138, 138, 138);
+}
+.menu_options span{
+    color: #9fb9d0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show_section{
+    width: 100%;
+    max-height: 100vh;
+    padding: .25rem 3rem 0 3rem;
+    background-color: #353535;
+}
+.sections_for_menu > h1 {
+    width: 100%;
+    color: aqua;
+    text-align: center;
+}
+.sections_for_menu > h1 span {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* here are all the sections related to menu */
+
+/* home section here  */
+#home{
+    width: 100%;
+    min-height: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_with_text{
+    width: 50%;
+    height: 100%;
+}
+#left_with_text h1{
+    width: 100%;
+    height: auto;
+    font-size: 45px;
+    color: white;
+    margin: .25rem;
+}
+#left_with_text #h1_3{
+    color: pink;
+}
+#left_with_text h3{
+    width: 100%;
+    color: rgb(157, 157, 159);
+}
+
+#right_with_img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right_with_img img{
+    width: 80%;
+    max-width: 23rem;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 0 0 1500px 0px rgba(219, 112, 212, 0.84);
+}
+@media (max-width:700px) {
+    #home{
+        flex-direction: column;
+        height: 90%;
+    }
+    #left_with_text{
+        width: 100%;
+        height: 40%;
+    }
+    #right_with_img{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* about section here  */
+#about_me{
+    width: 100%;
+    max-height: 38rem;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#left_with_img{
+    height: 25rem;
+    width: 30rem;
+    margin: 4rem 0 0 4rem;
+    border: 2px solid pink;
+    border-radius: 1rem 0;
+    position: relative;
+    box-shadow: 0 0 150px 0px rgba(219, 112, 212, 0.84);
+    
+}
+#about_img_container{
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    height: 25rem;
+    width: 30rem;
+    
+}
+#about_me_big_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 1rem 0;
+}
+
+#right_with_text{
+    height: 80%;
+    width: 45%;
+}
+#right_with_text p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.31rem;
+}
+
+
+
+
+
+
+
+/* home section here  */
+#projects{
+    width: 100%;
+    min-height: 38rem;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    width: 20rem;
+    height: 15rem;
+    padding: 0 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color:#6e7173;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 500px -50px rgba(219, 112, 212, 0.84);
+}
+.project h3{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.project span{
+    width: 100%;
+    min-height: 5rem;
+    color: #fff;
+    text-align: center;
+}
+.project button{
+    width: 7rem;
+    height: 2rem;
+    background-color: #23423f;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 20%;
+}
+.project button:hover{
+    background-color: #6e7173;
+}
+.project-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .4;
+}
+
+
+
+
+
+
+
+
+
+
+/* home section here  */
+#resume{
+
+}
+
+
+
+
+
+
+
+
+/* home section here  */
+#contact_me{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#contact_me_container{
+    width: 80%;
+    background-color: #9176a8;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 150px 0px rgba(219, 112, 212, 0.84);
+}
+#contact_me_info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+#contact_me_info div{
+    width: 100%;
+    min-height: 3rem;
+    font-size: 1.25rem;
+    margin: .5rem;
+    color: #d7d7d7;
+    display: flex;
+    justify-content: space-between;
+}
+#contact_me_info div span{
+    color: rgb(38, 37, 43);
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact_me_links{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact_me_links a{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: .5rem;
+}
+#contact_me_links a img{
+    height: 100%;
+    width: 100%;
+}
+
+    #contact_me_container{
+        flex-direction: column;
+    }
+    #contact_me_info{
+        width: 100%;
+    }
+    #contact_me_links{
+        width: 100%;
+}
+@media (max-width:703px) {
+    #contact_me_container{
+        width: 100%;
+    }
+  
+}
