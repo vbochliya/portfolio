@@ -386,7 +386,12 @@ body{
     z-index: -1;
     opacity: .4;
 }
-
+@media (max-width:824px) {
+    .project{
+        width: 80%;
+        margin: .5rem 0;
+    }
+}
 
 
 
