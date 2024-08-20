@@ -61,7 +61,7 @@ body{
     color: white;
     width: 15rem;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -347,6 +347,10 @@ body{
     z-index: 1;
     box-shadow: 0 0 500px -50px rgba(219, 112, 212, 0.84);
 }
+.project:hover{
+    background-color: #9176a8;
+    cursor: pointer;
+}
 .project h3{
     width: 100%;
     color: white;
@@ -466,15 +470,18 @@ body{
 #contact_me_links a{
     height: 3rem;
     width: 3rem;
-    border-radius: 50%;
-    overflow: hidden;
     margin: .5rem;
 }
 #contact_me_links a img{
     height: 100%;
     width: 100%;
+    border-radius: 50%;
+    transition: width .5s ,height .5s;
 }
-
+#contact_me_links a img:hover{
+    height: 120%;
+    width: 120%;
+}
 #contact_me_container{
     flex-direction: column;
 }
