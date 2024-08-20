@@ -423,7 +423,7 @@ body{
     width: 80%;
     background-color: #9176a8;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem;
     margin-top: 3rem;
     border-radius: 1rem;
@@ -443,10 +443,15 @@ body{
     margin: .5rem;
     color: #d7d7d7;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+}
+#contact_me_info img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 #contact_me_info div span{
-    color: rgb(38, 37, 43);
+    color: rgb(25, 0, 153);
     margin-left: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -470,18 +475,22 @@ body{
     width: 100%;
 }
 
-    #contact_me_container{
-        flex-direction: column;
-    }
-    #contact_me_info{
-        width: 100%;
-    }
-    #contact_me_links{
-        width: 100%;
+#contact_me_container{
+    flex-direction: column;
+}
+#contact_me_info{
+    width: 100%;
+}
+#contact_me_links{
+    width: 100%;
 }
 @media (max-width:703px) {
     #contact_me_container{
-        width: 100%;
+        width: 90%;
+        padding: .55rem;
+    }
+    #contact_me_info div{
+        font-size: 1rem;
     }
   
 }
