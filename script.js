@@ -70,6 +70,10 @@ function createProjectElements() {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
 
+        projectDiv.onclick = function() {
+            window.open(data.href, '_blank');
+        };
+
         const projectName = document.createElement('h3');
         projectName.textContent = data.name;
         projectDiv.appendChild(projectName);
@@ -77,12 +81,6 @@ function createProjectElements() {
         const projectDescription = document.createElement('span');
         projectDescription.textContent = data.description;
         projectDiv.appendChild(projectDescription);
-
-        // const projectButton = document.createElement('button');
-        // projectButton.href = data.href;
-        // projectButton.target = 'blank';
-        // projectButton.textContent = 'See More->';
-        // projectDiv.appendChild(projectButton);
 
         const projectImg = document.createElement('img');
         projectImg.src = data.backgroundImage;
