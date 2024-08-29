@@ -452,12 +452,15 @@ body{
     height: 2rem;
     border-radius: 50%;
 }
-#contact_me_info div span{
+#contact_me_info div span,a{
     color: rgb(25, 0, 153);
     margin-left: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+#contact_me_info div a:hover{
+    color: white;
 }
 #contact_me_links{
     width: 25%;
