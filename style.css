@@ -54,14 +54,13 @@ body{
 /*menu section where profile photo is and all selection menus are */
 .menu{
     position: fixed;
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
+    width: 0rem;
+    height: 100vh;
+    transition: width 1s ease-out;
     z-index: 101;
     top: 0;
     left: 4rem;
     color: white;
-    width: 15rem;
-    height: 100vh;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -71,7 +70,7 @@ body{
 }
 .menu.show {
     display: flex;
-    opacity: 1;
+    width: 15rem;
 }
 .profile{
     width: 100%;
@@ -477,11 +476,10 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    transition: width .5s ,height .5s;
+    transition: opacity .25s;
 }
-#contact_me_links a img:hover{
-    height: 120%;
-    width: 120%;
+#contact_me_links a:hover{
+    opacity: .5;
 }
 #contact_me_container{
     flex-direction: column;
