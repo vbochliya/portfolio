@@ -434,10 +434,101 @@ body{
 
 
 
-/* home section here  */
-#resume{
+  .resume_container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
 
-}
+  /* Header Section */
+  .resume_header {
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .resume_header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .resume_header p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .resume_contact {
+    font-size: 0.9rem;
+    color: #f0f0f0;
+  }
+
+  .resume_contact i {
+    margin-right: 8px;
+  }
+
+  /* Section Styles */
+  .resume_section {
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .resume_section:last-child {
+    border-bottom: none;
+  }
+
+  .resume_section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #8e44ad;
+    position: relative;
+  }
+
+  .resume_section h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+  }
+
+  .resume_section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+
+  .resume_highlight {
+    background: #f4f4f4;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #34495e;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .resume_container {
+      margin: 20px;
+    }
+
+    .resume_header h1 {
+      font-size: 2rem;
+    }
+
+    .resume_section h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+
 
 
 
