@@ -25,42 +25,44 @@ function show_section(section_id){
 
 const project_cards_data = [
     {
+        name: "Carnots.com",
+        description: "Revolutionizing education with a dynamic platform where students collaborate with top experts for assignment help. Features include real-time chat, seamless file sharing, and secure task workflows powered by Django, React, and AWS.",
+        backgroundImage: "khata.jpg",
+        href: "https://carnots.com",
+    },
+    {
         name: "Task Manager",
-        description: "It manage your tasks , Login & signup included , data save at database , Django backend",
-        backgroundImage:"task_manager.png",
-        href:"https://github.com/vbochliya/Task-Manager-DjangoHtmlCssJS",
+        description: "Effortlessly organize your daily tasks with this powerful tool. It includes user authentication for secure access, robust database integration for persistent storage, and a seamless workflow powered by Django.",
+        backgroundImage: "task_manager.png",
+        href: "https://github.com/vbochliya/Task-Manager-DjangoHtmlCssJS",
     },
     {
-        name: "Stocks Filtering",
-        description: "Filter all stocks of Exchange bitween to points, input as price&volume diff. and range of bath",
-        backgroundImage:"trading_researcher.jpg",
-        href:"https://github.com/vbochliya/stock-filtering",
+        name: "Stock Analyzer",
+        description: "Take charge of your trading strategies with this advanced stock filtering tool. Analyze stocks by price, volume, and range with customizable filters, ensuring informed decisions in dynamic markets.",
+        backgroundImage: "trading_researcher.jpg",
+        href: "https://github.com/vbochliya/stock-filtering",
     },
     {
-        name: "Quiz Web",
-        description: "Allow use to take quiz with Multiple choice questions ,timer enabled ,show the score in the end",
-        backgroundImage:"quiz.jpg",
-        href:"https://github.com/vbochliya/interative_quiz",
+        name: "Quiz Master",
+        description: "A fun and interactive platform for self-improvement! Enjoy timed quizzes with multiple-choice questions, a responsive timer, and detailed scoring at the end to evaluate your knowledge.",
+        backgroundImage: "quiz.jpg",
+        href: "https://github.com/vbochliya/interative_quiz",
     },
     {
-        name: "Product Showpage",
-        description: "A small clothing business can show there product here , it's looking like a Fashion website",
-        backgroundImage:"ecommerse.jpg",
-        href:"https://github.com/vbochliya/Nikunj-trading",
-    },
-    {
-        name: "My Khata",
-        description: "We can manage our daily life expences by making entry here, expanses can be filtered on the basis of date, ,data stored a database",
-        backgroundImage:"khata.jpg",
-        href:"https://github.com/vbochliya/my-khata",
+        name: "Fashion Showcase",
+        description: "Empower your small clothing business with this visually stunning platform. Perfect for showcasing your products with elegance and style, this tool makes your business stand out online.",
+        backgroundImage: "ecommerse.jpg",
+        href: "https://github.com/vbochliya/Nikunj-trading",
     },
     {
         name: "Student CRM",
-        description: "Students can see there result and rank in exam here ",
-        backgroundImage:"student_crm.jpg",
-        href:"https://github.com/vbochliya/",
+        description: "A dedicated platform for students to access their exam results and rankings instantly. Designed for ease of use, it offers streamlined access to critical academic insights.",
+        backgroundImage: "student_crm.jpg",
+        href: "https://github.com/vbochliya/",
     },
 ];
+
+
 //function for creating project's div with js with fiven list of data of projecs
 function createProjectElements() {
 

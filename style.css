@@ -86,7 +86,7 @@ body{
     background-color: transparent;
 }
 .profile img{
-    width: 10rem;
+    width: 9rem;
     height: 10rem;
     border-radius: 50%;
 }
@@ -174,6 +174,7 @@ body{
 /* home section here  */
 #home{
     width: 100%;
+    height: 100%;
     min-height: 38rem;
     display: flex;
     justify-content: center;
@@ -183,10 +184,12 @@ body{
 #left_with_text{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem;
 }
 #left_with_text h1{
-    width: 100%;
-    height: auto;
     font-size: 45px;
     color: white;
     margin: .25rem;
@@ -213,7 +216,12 @@ body{
     border-radius: 10%;
     box-shadow: 0 0 1500px 0px rgba(219, 112, 212, 0.84);
 }
-@media (max-width:700px) {
+@media (max-width:1036px) {
+    #left_with_text{
+        padding-left: 5rem;
+    }
+}
+@media (max-width:875px) {
     .show_section{
         padding: 1rem 1rem 0 4rem;
     }
@@ -224,10 +232,16 @@ body{
     #left_with_text{
         width: 100%;
         height: 40%;
+        padding-left: 1rem;
+        text-align: center;
     }
     #right_with_img{
         width: 100%;
         height: 60%;
+    }
+    #right_with_img img{
+        width: 100%;
+        height: 100%;
     }
 }
 @media (max-width:500px) {
@@ -238,13 +252,22 @@ body{
         min-height: 100vh;
     }
     #left_with_text{
-        height: 50%;
-    }
-    #right_with_img{
         height: 40%;
     }
+    #right_with_img{
+        width: 16rem;
+        height: 20rem;
+    }
 }
-
+@media (max-width:385px) {
+    #left_with_text h1{
+        font-size: 1.8rem;
+        margin: .25rem 0;
+    }
+    #left_with_text h3{
+        font-size: .9rem;
+    }
+}
 
 
 
@@ -294,7 +317,6 @@ body{
 }
 #right_with_text p{
     color: white;
-    font-weight: bold;
 }
 @media (max-width:1174px) {
     #right_with_text{
@@ -395,7 +417,7 @@ body{
     z-index: 10;
     object-fit: cover;
     z-index: -1;
-    opacity: .4;
+    opacity: .1;
 }
 @media (max-width:824px) {
     .project{
