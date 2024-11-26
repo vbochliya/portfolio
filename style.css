@@ -518,13 +518,18 @@ body{
     .resume_container {
       margin: 20px;
     }
-
+    .resume_header {
+        padding: 10px;
+      }
     .resume_header h1 {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
-
+    .resume_header p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
     .resume_section h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 
