@@ -432,7 +432,9 @@ body{
 
 
 
-
+#resume{
+    display: none;
+}
 
   .resume_container {
     max-width: 900px;
